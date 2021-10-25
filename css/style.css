@@ -15,6 +15,7 @@ logotohome img{
     border-radius: 70%;
     width: 70px;
     height: 70px;
+    
     object-fit: cover; /* 画像のトリミング */
 }
 
@@ -40,8 +41,8 @@ h3{
     margin-left: 2em;
 }
 div{
-    margin-top: 1em;
-    margin-left: 3em;
+    margin-top: 0em;
+    margin-left: 0em;
 }
 p{
     margin-left: 3em;
