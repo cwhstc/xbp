@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+
+<body style="background-color: rgb(170, 240, 234);
+} 
+<div>
+    <center><h1>ゲーム作成</h1><br></center>
+    <div style="position: absolute;left: 100px;top:100px;"><font color="black">
+    <h1>説明：</h1><br>
+    1~50 正解を当てる<br>
+    チャンスは5回まで<br>
+ <h1>ソースコード：</h1><br>
+</font>
+    <div class="jb51code">
+    <pre class="brush:py;">
+     #!/usr/bin/python
+    # -*- coding: UTF-8 -*-
+            
+     import random
+    secretNumber=random.randint(0,50)
+    print("0-50の数字を選んでください")
+    for i in range(1,6):
+        print ("当てて見ましょう:")
+        guess=int(input())
+        if guess<secretNumber:
+            print ("もっと大きい")
+            
+        elif guess>secretNumber:
+            print ("もっと小さい.")
+        else:break
+    if guess==secretNumber:
+        print( "正解 " )
+    else:
+        print ("不正解" )
+            </pre>
+        </div><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LEbF8e_ZecY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    
+    
+    </html></head>
+ 
+    
+    
+
+
