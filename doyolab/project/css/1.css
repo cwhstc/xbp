@@ -1,0 +1,8 @@
+<style>
+  .padded-text {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+</style>
+
+<p class="padded-text">这是一个带有留白的段落文本。</p>
