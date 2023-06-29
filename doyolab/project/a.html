@@ -1,25 +1,89 @@
 <!DOCTYPE html>
 <html lang="jp">
 <head>
-    <meta charset="UTF-8">
-   
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/xbp.ico">
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f1f9f6;
+        }
+
+        .content {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 40px;
+          background-color: #fff;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          border-radius: 6px;
+        }
+
+        h1 {
+          text-align: center;
+          color: #00a5b5;
+          margin-top: 0;
+          font-size: 36px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        ol {
+          list-style-type: none;
+          padding-left: 0;
+        }
+
+        ol li {
+          color: #004d59;
+          line-height: 1.6;
+          text-align: justify;
+          padding: 10px 0;
+          border-bottom: 1px solid rgba(0, 77, 89, 0.5);
+          transition: background-color 0.3s ease-in-out;
+        }
+
+        ol li:last-child {
+          border-bottom: none;
+        }
+
+        ol a {
+          display: inline-block;
+          position: relative;
+          color: #007980;
+          text-decoration: none;
+          transition: color 0.3s ease-in-out;
+        }
+
+        ol a:before {
+          content: "";
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: #00a5b5;
+          transform: scaleX(0);
+          transition: transform 0.3s ease-in-out;
+        }
+
+        ol a:hover {
+          color: #00a5b5;
+        }
+
+        ol a:hover:before {
+          transform: scaleX(1);
+        }
+    </style>
 </head>
 <body>
-    <logotohome>
-    <a href="../index.html"><img src="./images/0_XBlogo.png" alt=""></a>
-    </logotohome>
-    
+  <div class="content">
+    <h1>目次</h1>
 
-    <ol><a href="2.html" target="_blank">ベンチ</a></ol>
- 
-
-
-    
-<br>
-<br>
-
-
+    <ol>
+      <li><a href="2.html" target="_blank">1. ベンチ</a></li>
+     
+    </ol>
+  </div>
 </body>
 </html>
+
+
+
