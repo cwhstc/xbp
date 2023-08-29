@@ -3,54 +3,84 @@
 <head>
     <style>
         body {
-          font-family: Arial, sans-serif;
-          background-color: #f7f7f7;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #F1F1F1;
+            color: #333;
+            margin: 0;
+            padding: 0;
         }
         
         .content {
-          max-width: 800px;
-          margin: 0 auto;
-          padding: 40px;
-          background-color: #fff;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          border-radius: 6px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
         }
 
         h1 {
-          text-align: center;
-          color: #333;
-          margin-top: 0;
-          font-size: 36px;
-          text-transform: uppercase;
-          letter-spacing: 2px;
+            text-align: center;
+            color: #8df4f1;
+            margin-top: 0;
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         p {
-          color: #666;
-          line-height: 1.6;
-          text-align: justify;
+            color: #666;
+            line-height: 1.8; /* 调整文字行间距 */
+            text-align: justify;
         }
 
         .image-section {
-          text-align: center;
+            text-align: center;
+            display: flex; /* 使用 flex 布局 */
+            flex-wrap: wrap; /* 当图片过多时换行 */
+            justify-content: center; /* 图片居中 */
         }
 
         .image-section img {
-          width: 30%;
-          margin: 20px;
-          border-radius: 6px;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 40%; /* 图片宽度调整 */
+            max-width: 300px; /* 图片最大宽度 */
+            height: auto; /* 图片高度自适应 */
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 10px; /* 调整图片间距 */
+        }
+
+        .image-text {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 10px;
         }
 
         .accent-color {
-          color: #ff6f00;
+            color: #8df4f1;
         }
 
         .highlight-bg {
-          background-color: #f9f9f9;
-          padding: 20px;
-          margin: 20px -40px;
-          border-radius: 6px;
+            background-color: #F1F1F1;
+            padding: 20px;
+            margin: 20px -40px;
+            border-radius: 6px;
+        }
+        
+        .media-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .media-container video,
+        .media-container img {
+            width: 60%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 10px;
         }
     </style>
 </head>
@@ -68,13 +98,13 @@
       </font>
     </p>
 
-    <div class="image-section">
-      <p>試作品の画像：</p>
-      <img src="images/11.png" alt="試作品の画像">
+    <div class="media-container">
+        <img src="images/11.png" alt="試作品の画像">
+        <div class="image-text">試作品の画像</div>
     </div>
 
     <p>
-      <center>第1回の試作品は原材料が木であることを考慮して卓上ボール盤とShopBotで加工する。</center><br><br>
+      <br><br><center>第1回の試作品は原材料が木であることを考慮して卓上ボール盤とShopBotで加工する。</center><br>
       <center>一部の完成品👇</center><br>
     </p>
 
@@ -84,7 +114,7 @@
     </div>
 
     <p>
-      <center>量産（常設）の可能性と生産コストを考慮して、3Dプリンタで製作することを決定した。</center><br><br>
+      <br><br><center>量産（常設）の可能性と生産コストを考慮して、3Dプリンタで製作することを決定した。</center><br>
     </p>
 
     <div class="image-section">
@@ -92,22 +122,43 @@
       <img src="images/7.png" alt="完成品の画像">
     </div>
     <p>
-        <center>第1回の試作品👇</center><br><br>
+      <br><center>第1回の試作品👇</center><br>
         <div class="image-section">
-            <img src="images/8.png" alt="完成品の画像">
-      </p>
+            <img src="images/8.png" alt="完成品の画像"><br><br>
+          </div> </p>
       
-      <center>試作品動画 </center></p>
-          <video controls width="640" height="360">
-              <source src="images/11-1.mp4" type="video/mp4">
-              
-          </video>
-      </body>
-      </html>
-    <div class="highlight-bg">
-     
+          <div class="media-container">
+            <br><center>試作品動画 </center>
+            <video controls width="640" height="360">
+                <source src="images/11-1.mp4" type="video/mp4">
+            </video>
+        </div>
+    
+    <p>
+      <center>何度か試作した結果により、これまでのは安定性と強度が悪く、制作の難易度が高く、原材料コストが高い（木造）などの欠点があることに気づき、従来のデザインを変えたいと思いました。<br><br></center><br>
+      <center>新いデザイいの画像</center>
+    <div class="image-section">
+        <img src="images/12.png" alt="完成品の画像">
+        <img src="images/13.png" alt="完成品の画像">
+        <img src="images/14.png" alt="完成品の画像">
+      </p>
+    
+  </div>
+  
+  <p>
+    <center>第二回の試作品（完成品）👇</center>
+  <div class="image-section">
+ 
+      <img src="images/15.png" alt="完成品の画像" class="align-top">
+      <img src="images/16.png" alt="完成品の画像" class="align-top">
+      <img src="images/17.png" alt="完成品の画像" class="align-center">
+      <img src="images/18.png" alt="完成品の画像" class="align-center">
+  </div>
+  
+    </p>
+    
+
+  <div class="highlight-bg">
   </div>
 </body>
 </html>
-
-
