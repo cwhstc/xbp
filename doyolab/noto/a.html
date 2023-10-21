@@ -5,22 +5,65 @@
     <title>Doyolab</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/xbp.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5F5F5;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .menu a {
+            text-decoration: none;
+            font-size: 24px;
+            color: #555;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #DDD;
+            border: 2px solid #AAA;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #007BFF;
+            color: #FFF;
+        }
+
+        .logo {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .logo img {
+            max-width: 100px;
+        }
+    </style>
 </head>
 <body>
-    <logotohome>
-    <a href="../index.html"><img src="./images/0_XBlogo.png" alt=""></a>
-    </logotohome>
+    <div class="logo">
+        <a href="../index.html"><img src="images/0XBlogo.png" alt="Doyolab Logo"></a>
+    </div>
     <h1>Doyolab</h1>
    
-    <li><ol><a href="1.html" target="_blank">トークイベント</a></ol></li>
-    <li><ol><a href="chinaday.html" target="_blank">chinaday</a></ol></li>
-
-
-
-    
-<br>
-<br>
-
-
+    <div class="menu">
+        <a href="1.html" target="_blank">トークイベント</a>
+        <a href="chinaday.html" target="_blank">chinaday</a>
+        <a href="tarpaulin.html" target="_blank">ターポリンの再利用</a>
+    </div>
 </body>
 </html>
